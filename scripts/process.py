@@ -56,6 +56,7 @@ parser.add_argument('--roll-deg', type=float, default=0.0,
 # pose setup options
 parser.add_argument('--max-angle', type=float, default=25.0, help='max pitch or roll angle for image inclusion')
 parser.add_argument('--force-altitude', type=float, help='Fudge altitude geotag for stupid dji phantom 4 pro v2.0')
+parser.add_argument('--force-heading', type=float, help='Force heading geotag if desired (e.g. missing from GoPro image)')
 
 # feature detection options
 parser.add_argument('--scale', type=float, default=0.4, help='scale images before detecting features, this acts much like a noise filter')
