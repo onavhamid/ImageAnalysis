@@ -180,8 +180,8 @@ if os.path.exists(pix4d_file):
 elif os.path.exists(meta_file):
     log("Found a pose file:", meta_file)
 else:
-    pose.make_pix4d(args.project, args.force_altitude)
-    
+    pose.make_pix4d(args.project, args.force_altitude, args.force_heading)
+
 pix4d_file = os.path.join(args.project, 'pix4d.csv')
 meta_file = os.path.join(args.project, 'image-metadata.txt')
 if os.path.exists(pix4d_file):
