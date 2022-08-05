@@ -19,7 +19,7 @@ import os.path
 from lib import matcher
 from lib import project
 
-import match_culling as cull
+from lib import match_culling as cull
 
 parser = argparse.ArgumentParser(description='Set the initial camera poses.')
 parser.add_argument('project', help='project directory')
