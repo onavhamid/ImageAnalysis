@@ -57,7 +57,7 @@ def get_pose(image_file):
     xmp = {}
     for line in lines:
         line = line.rstrip().lstrip()
-        if line[0] == "<":
+        if len(line) == 0 or line[0] == "<":
             continue
         token, val = line.split("=")
         val = val.strip('"')
