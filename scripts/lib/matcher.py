@@ -1085,9 +1085,9 @@ def rotateAndScale(img, degreesCCW=30, scaleFactor=1.0 ):
 
 def copyKeyPoint(k):
     return cv2.KeyPoint(x=k.pt[0], y=k.pt[1],
-                        _size=k.size, _angle=k.angle,
-                        _response=k.response, _octave=k.octave,
-                        _class_id=k.class_id)
+                        size=k.size, angle=k.angle,
+                        response=k.response, octave=k.octave,
+                        class_id=k.class_id)
     
 def showMatchOrient(i1, i2, idx_pairs, status=None, orient='relative'):
     #print " -- idx_pairs = " + str(idx_pairs)

@@ -35,7 +35,7 @@ proj.undistort_keypoints()
 matcher = matcher.Matcher()
 
 print("Loading match points (direct)...")
-matches = pickle.load( open( os.path.join(proj.analysis_dir, "matches_direct"), "rb" ) )
+matches = pickle.load( open( os.path.join(proj.analysis_dir, "matches_grouped"), "rb" ) )
 
 print('num images:', len(proj.image_list))
 

@@ -21,11 +21,8 @@ proj.load_features()
 proj.undistort_keypoints()
 
 # no! (maybe?)
-print("Loading direct matches...")
-matches = pickle.load( open( os.path.join(args.project, 'matches_direct'), 'rb' ) )
-
-#print("Loading grouped matches...")
-#matches = pickle.load( open( os.path.join(args.project, 'matches_grouped'), 'rb' ) )
+print("Loading grouped matches...")
+matches = pickle.load( open( os.path.join(proj.analysis_dir, 'matches_grouped'), 'rb' ) )
 #print("features:", len(matches))
 
 A = pgv.AGraph()
