@@ -13,8 +13,8 @@ from props import getNode
 from .logger import log
 
 #min_group = 10
-min_group = 7
-min_connections = 25
+min_group = 2
+min_connections = 10
 max_wanted = 250                # possibly overridden later
 
 def my_add(placed_matches, matches, group_level, i):
