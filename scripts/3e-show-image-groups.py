@@ -32,6 +32,8 @@ for match in matches:
         for m2 in match[1:]:
             if m1 == m2:
                 continue
+            if type(m1) is not list: m1 = [m1]
+            if type(m2) is not list: m2 = [m2]
             i1 = proj.image_list[m1[0]]
             i2 = proj.image_list[m2[0]]
             A.add_edge(i1.name, i2.name)
