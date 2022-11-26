@@ -145,7 +145,10 @@ class ProjectMgr():
         camera = camera.replace("/", "-")
         make = make.replace("/", "-")
         model = model.replace("/", "-")
-        lens_model = lens_model.replace("/", "-")
+        try:
+            lens_model = lens_model.replace("/", "-")
+        except AttributeError:
+            pass
         return camera, make, model, lens_model
         
     def load_images_info(self):
